@@ -47,18 +47,18 @@ Builds SNS products, place in local repo
               <archiveFileName>alarm-notifier-${alarm.version}</archiveFileName>
               <attachId>alarm-notifier</attachId>
             </product>
-            <product>
+	    <product>
               <id>alarm-config</id>
               <rootFolder>alarm-config-${alarm.version}</rootFolder>
               <archiveFileName>alarm-config-${alarm.version}</archiveFileName>
               <attachId>alarm-config</attachId>
-            </product>
-            <product>
+	    </product>
+	    <product>
               <id>jms2rdb</id>
               <rootFolder>jms2rdb-${alarm.version}</rootFolder>
               <archiveFileName>jms2rdb-${alarm.version}</archiveFileName>
               <attachId>jms2rdb</attachId>
-            </product>
+	    </product>
           </products>
         </configuration>
         <executions>
