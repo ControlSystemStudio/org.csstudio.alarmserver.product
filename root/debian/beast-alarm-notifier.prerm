@@ -1,0 +1,19 @@
+#!/bin/sh 
+
+
+case "$1" in
+  remove)
+    service beast-alarm-notifier stop
+
+    userdel -r alarmnotifier
+
+    ;;
+  failed-upgrade)
+    ;;
+  deconfigure)
+    ;;
+  *)
+    ;;
+esac
+
+exit 0

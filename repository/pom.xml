@@ -36,28 +36,28 @@ Builds SNS products, place in local repo
             -->
           <products>
             <product>
-              <id>alarm-server</id>
-              <rootFolder>alarm-server-${alarm.version}</rootFolder>
-              <archiveFileName>alarm-server-${alarm.version}</archiveFileName>
-              <attachId>alarm-server</attachId>
+              <id>beast-alarm-server</id>
+              <rootFolder>beast-alarm-server-${alarm.version}</rootFolder>
+              <archiveFileName>beast-alarm-server-${alarm.version}</archiveFileName>
+              <attachId>beast-alarm-server</attachId>
             </product>
             <product>
-              <id>alarm-notifier</id>
-              <rootFolder>alarm-notifier-${alarm.version}</rootFolder>
-              <archiveFileName>alarm-notifier-${alarm.version}</archiveFileName>
-              <attachId>alarm-notifier</attachId>
+              <id>beast-alarm-notifier</id>
+              <rootFolder>beast-alarm-notifier-${alarm.version}</rootFolder>
+              <archiveFileName>beast-alarm-notifier-${alarm.version}</archiveFileName>
+              <attachId>beast-alarm-notifier</attachId>
             </product>
 	    <product>
-              <id>alarm-config</id>
-              <rootFolder>alarm-config-${alarm.version}</rootFolder>
-              <archiveFileName>alarm-config-${alarm.version}</archiveFileName>
-              <attachId>alarm-config</attachId>
+              <id>beast-alarm-config</id>
+              <rootFolder>beast-alarm-config-${alarm.version}</rootFolder>
+              <archiveFileName>beast-alarm-config-${alarm.version}</archiveFileName>
+              <attachId>beast-alarm-config</attachId>
 	    </product>
 	    <product>
-              <id>jms2rdb</id>
-              <rootFolder>jms2rdb-${alarm.version}</rootFolder>
-              <archiveFileName>jms2rdb-${alarm.version}</archiveFileName>
-              <attachId>jms2rdb</attachId>
+              <id>beast-alarm-jms2rdb</id>
+              <rootFolder>beast-alarm-jms2rdb-${alarm.version}</rootFolder>
+              <archiveFileName>beast-alarm-jms2rdb-${alarm.version}</archiveFileName>
+              <attachId>beast-alarm-jms2rdb</attachId>
 	    </product>
           </products>
         </configuration>

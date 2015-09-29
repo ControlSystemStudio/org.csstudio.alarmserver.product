@@ -1,0 +1,19 @@
+#!/bin/sh 
+
+
+case "$1" in
+  remove)
+    service beast-alarm-jms2rdb stop
+
+    userdel -r jms2rdb
+
+    ;;
+  failed-upgrade)
+    ;;
+  deconfigure)
+    ;;
+  *)
+    ;;
+esac
+
+exit 0

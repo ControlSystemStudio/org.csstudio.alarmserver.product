@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="AlarmConfigTool" uid="alarm-config" id="org.csstudio.alarm.beast.configtool.product" application="org.csstudio.alarm.beast.configtool.application" version="4.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="Alarm Server" uid="beast-alarm-server" id="org.csstudio.alarm.beast.server.product" application="org.csstudio.alarm.beast.server.application" version="4.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -10,12 +10,17 @@
       <programArgs>--launcher.suppressErrors
       </programArgs>
       <vmArgs>-Declipse.exitdata=
+-Djava.awt.headless=true -Xms64m -Xmx256m
+-Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog
+-Dorg.apache.commons.logging.simplelog.defaultlog=fatal
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
 
-   <launcher name="AlarmConfigTool">
+   <windowImages/>
+
+   <launcher name="AlarmServer">
       <solaris/>
       <win useIco="false">
          <bmp/>
@@ -29,19 +34,24 @@
       <plugin id="com.ibm.icu"/>
       <plugin id="com.ibm.icu.base"/>
       <plugin id="javax.xml"/>
+      <plugin id="org.antlr.runtime"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
       <plugin id="org.csstudio.alarm.beast"/>
-      <plugin id="org.csstudio.alarm.beast.configtool"/>
+      <plugin id="org.csstudio.alarm.beast.server"/>
       <plugin id="org.csstudio.apputil"/>
       <plugin id="org.csstudio.csdata"/>
-      <plugin id="org.csstudio.data"/>
       <plugin id="org.csstudio.java"/>
       <plugin id="org.csstudio.logging"/>
+      <plugin id="org.csstudio.platform.libs.epics"/>
       <plugin id="org.csstudio.platform.libs.jdbc"/>
       <plugin id="org.csstudio.platform.libs.jms"/>
       <plugin id="org.csstudio.platform.utility.jms"/>
       <plugin id="org.csstudio.platform.utility.rdb"/>
       <plugin id="org.csstudio.security"/>
       <plugin id="org.csstudio.utility.test"/>
+      <plugin id="org.csstudio.vtype.pv"/>
       <plugin id="org.csstudio.workspace"/>
       <plugin id="org.eclipse.core.contenttype"/>
       <plugin id="org.eclipse.core.expressions"/>
@@ -55,6 +65,7 @@
       <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
       <plugin id="org.eclipse.equinox.app"/>
       <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.console"/>
       <plugin id="org.eclipse.equinox.ds"/>
       <plugin id="org.eclipse.equinox.preferences"/>
       <plugin id="org.eclipse.equinox.registry"/>
@@ -65,6 +76,8 @@
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
       <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.epics.pvaccess"/>
+      <plugin id="org.epics.pvdata"/>
       <plugin id="org.epics.util"/>
       <plugin id="org.epics.vtype"/>
       <plugin id="org.hamcrest.core"/>

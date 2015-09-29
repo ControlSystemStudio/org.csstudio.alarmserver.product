@@ -1,0 +1,19 @@
+#!/bin/sh 
+
+
+case "$1" in
+  remove)
+    service beast-alarm-server stop
+    
+    userdel -r beastalarm
+
+    ;;
+  failed-upgrade)
+    ;;
+  deconfigure)
+    ;;
+  *)
+    ;;
+esac
+
+exit 0

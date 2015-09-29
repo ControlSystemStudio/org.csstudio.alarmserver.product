@@ -1,0 +1,41 @@
+# /etc/rc.d/init.d/beast-alarm-notifier:  Controls the beast-alarm-notifier
+#
+# Version: beast-alarm-notifier 1.0
+#
+# chkconfig: 345 99 01
+# description: Control the beast alarm notifier 
+#
+
+### BEGIN INIT INFO
+# Provides:          beast-alarm-notifier
+# Required-Start:    $remote_fs $local_fs $network $syslog $time
+# Required-Stop:     $remote_fs $local_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: EPICS BEAST Alarmserver alarm notifier
+# Description:       The EPICS alarmserver BEAST alarm notifier
+### END INIT INFO
+
+USER=alarmnotifier
+PROG=/usr/share/beast-alarm-notifier/alarm_notifier
+
+
+case $1 in
+start)
+    su - $USER -c "$PROG start"
+    ;;
+stop)
+    su - $USER -c "$PROG stop"
+    ;;
+status)
+    su - $USER -c "$PROG status"
+    ;;
+restart)
+    su - $USER -c "$PROG stop"
+    su - $USER -c "$PROG start"
+    ;;
+*)
+    echo $0 "start | stop | status"
+esac
+
+    
