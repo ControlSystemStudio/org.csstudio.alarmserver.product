@@ -8,20 +8,20 @@ Homepage: http://cs-studio.sourceforge.net/
 
 Package: beast-alarm-config
 Architecture: amd64
-Depends: java-runtime-headless,
+Depends: default-jre-headless,
 Description: BEAST Database Configuration Tool
 
 Package: beast-alarm-notifier
 Architecture: amd64
-Depends: java-runtime-headless,
+Depends: default-jre-headless,
 Description: BEAST Notifier Service, runs as a headless eclipse project
 
 Package: beast-alarm-server
 Architecture: amd64
-Depends: java-runtime-headless,
+Depends: default-jre-headless,
 Description: BEAST Alarm Server, runs as a headless eclipse project
 
 Package: beast-alarm-jms2rdb
 Architecture: amd64
-Depends: java-runtime-headless,
+Depends: default-jre-headless,
 Description: BEAST JMS to Database Route, runs as a headless eclipse project
