@@ -17,7 +17,7 @@
 ### END INIT INFO
 
 USER=alarmnotifier
-PROG=/usr/share/beast-alarm-notifier/alarm_notifier
+PROG=/usr/share/beast-alarm-notifier/alarmnotifier
 
 
 case $1 in
