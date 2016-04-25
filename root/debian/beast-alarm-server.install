@@ -1,2 +1,2 @@
-beast-alarm-notifier usr/share
-etc/alarm_notifier
+beast-alarm-server usr/share
+etc/alarm_server
