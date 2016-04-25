@@ -1,3 +1,15 @@
+beast (1.3.0-11) unstable; urgency=medium
+
+  *  test
+
+ -- Eric Berryman <jenkins-slave@jenkins5.nscl.msu.edu>  Mon, 25 Apr 2016 12:47:27 -0400
+
+beast (1.3.0-10) unstable; urgency=medium
+
+  * incorrect install instructions for server
+
+ -- Eric Berryman <jenkins-slave@jenkins5.nscl.msu.edu>  Mon, 25 Apr 2016 12:29:05 -0400
+
 beast (1.3.0-9) unstable; urgency=medium
 
   *  changed notifier product name to fit others
