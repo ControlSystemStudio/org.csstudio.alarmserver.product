@@ -1,3 +1,9 @@
+beast (1.3.0-6) unstable; urgency=medium
+
+  *  update jre package name
+
+ -- Eric Berryman <jenkins-slave@jenkins5.nscl.msu.edu>  Mon, 25 Apr 2016 09:29:25 -0400
+
 beast (1.3.0-5) unstable; urgency=medium
 
   *  test
