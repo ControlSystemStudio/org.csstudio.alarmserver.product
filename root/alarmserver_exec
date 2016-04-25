@@ -1,3 +1,4 @@
+#!/bin/sh
 # alarmserver:  Controls the CSS AlarmServer
 #
 # This is meant to be run by the appropriate user.
@@ -6,7 +7,8 @@
 #
 # kasemirk@ornl.gov
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 DIR=/usr/share/beast-alarm-server
 PROGRAM=AlarmServer
 

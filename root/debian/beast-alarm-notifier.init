@@ -1,3 +1,4 @@
+#!/bin/sh
 # /etc/rc.d/init.d/beast-alarm-notifier:  Controls the beast-alarm-notifier
 #
 # Version: beast-alarm-notifier 1.0

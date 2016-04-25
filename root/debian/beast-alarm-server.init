@@ -1,3 +1,4 @@
+#!/bin/sh
 # /etc/rc.d/init.d/alarmserver:  Controls the Alarm Server
 #
 # Version: AlarmServer 1.0

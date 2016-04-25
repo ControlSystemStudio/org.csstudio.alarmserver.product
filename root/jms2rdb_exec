@@ -1,3 +1,4 @@
+#!/bin/sh
 # jms2rdb:  Controls the CSS JMS-2-RDB tool
 #
 # This is meant to be run by the appropriate user.
@@ -13,7 +14,8 @@
 # kasemirk@ornl.gov
 
 #export JAVA_HOME=/usr/local/java/jdk1.5.0_05
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 PROGRAM=JMS2RDB
 # HTTP port must match JMS2RDB configuration!
 HTTP=4913
