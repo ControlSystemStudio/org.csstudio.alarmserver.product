@@ -19,7 +19,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 PROGRAM=AlarmNotifier
 
 DIR=/usr/share/beast-alarm-notifier
-LOGFILE=$DIR/$PROGRAM.log
+LOGFILE=/var/log/beast-alarm-notifier/$PROGRAM`date +'_%Y-%m-%d_%H:%M:%S'`.log
 PIDFILE=$DIR/$PROGRAM.pid
 DATA=/tmp/$PROGRAM.$$
 OPT="-pluginCustomization /etc/alarm_notifier/settings.ini -data $DATA -consoleLog -vmargs -Djava.awt.headless=true"

@@ -3,12 +3,12 @@
 
 case "$1" in
   configure)
-    
+    mkdir -p /var/log/beast-alarm-notifier/ 
     if ! getent passwd alarmnotifier > /dev/null 2>&1; then
       useradd -c 'alarmnotifier' -r -U alarmnotifier
-    fi 
+    fi
+    chown alarmnotifier:alarmnotifier /var/log/beast-alarm-notifier
     chown -R alarmnotifier /usr/share/beast-alarm-notifier
-    service beast-alarm-notifier restart 
     ;;
   abort-upgrade)
     :

@@ -3,12 +3,12 @@
 
 case "$1" in
   configure)
-    
+    mkdir -p /var/log/beast-alarm-jms2rdb/
     if ! getent passwd jms2rdb > /dev/null 2>&1; then
       useradd -c 'jms2rdb' -r -U jms2rdb
     fi 
+    chown jms2rdb:jms2rdb /var/log/beast-alarm-jms2rdb
     chown -R jms2rdb /usr/share/beast-alarm-jms2rdb
-    service beast-alarm-jms2rdb restart 
     ;;
   abort-upgrade)
     :

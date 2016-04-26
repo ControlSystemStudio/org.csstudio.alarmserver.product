@@ -3,11 +3,12 @@
 
 case "$1" in
   configure)
+    mkdir -p /var/log/beast-alarm-server/
     if ! getent passwd beastalarm >/dev/null; then 
       useradd -c 'beastalarm' -r -U beastalarm
-    fi 
+    fi
+    chown beastalarm:beastalarm /var/log/beast-alarm-server
     chown -R beastalarm /usr/share/beast-alarm-server
-    service beast-alarm-server restart
     ;;
   abort-upgrade)
     :

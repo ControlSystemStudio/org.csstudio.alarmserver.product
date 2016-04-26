@@ -21,7 +21,7 @@ PROGRAM=JMS2RDB
 HTTP=4913
 
 DIR=/usr/share/beast-alarm-jms2rdb
-LOGFILE=$DIR/$PROGRAM.log
+LOGFILE=/var/log/beast-alarm-jms2rdb/$PROGRAM`date +'_%Y-%m-%d_%H:%M:%S'`.log
 PIDFILE=$DIR/$PROGRAM.pid
 DATA=/tmp/$PROGRAM.$$
 OPT="-pluginCustomization /etc/alarm_jms2rdb/settings.ini -data $DATA -consoleLog -vmargs -Djava.awt.headless=true"

@@ -3,14 +3,11 @@
 
 case "$1" in
   remove)
-    service beast-alarm-jms2rdb stop
-
-    userdel -r jms2rdb
-
     ;;
   failed-upgrade)
     ;;
   deconfigure)
+    userdel -r jms2rdb
     ;;
   *)
     ;;

@@ -13,7 +13,7 @@ DIR=/usr/share/beast-alarm-server
 PROGRAM=AlarmServer
 
 #LOGFILE=$DIR/$PROGRAM.log
-LOGFILE=$DIR/$PROGRAM`date +'_%Y-%m-%d_%H:%M:%S'`.log
+LOGFILE=/var/log/beast-alarm-server/$PROGRAM`date +'_%Y-%m-%d_%H:%M:%S'`.log
 PIDFILE=$DIR/$PROGRAM.pid
 DATA=/tmp/$PROGRAM.$$
 INI=/etc/alarm_server/settings.ini
